@@ -6,4 +6,7 @@ Ce repo est pour le rendu d'un projet de classe en Base de la Modélisation Obje
     ### Binome 2 : SALAKO Augustin Yann
 
 ## TO DO
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
 
