@@ -8,6 +8,7 @@ Pour ce système, nous avons recensés deux (02) types d'utilisateurs à savoir 
 
 #### Les Cas d'Utilisations (Uses Cases / Fonctionalités)
 Nous avons recensés plusieurs cas d'utilisation. On déplore entre autre les cas suivants :
+    
     1. Créer un  compte : Les utilisateurs ont la possibilité de créer un compte sur le système.
     
     2. Se connecter : Les utilisateurs peuvent se connecter à leur compte existant sur le système.
