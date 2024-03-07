@@ -6,7 +6,8 @@ Ce repo est pour le rendu d'un projet de classe en Base de la Modélisation Obje
     - Binome 2 : SALAKO Augustin Sèmèvo
 
 ## TO DO
-+ [x] Diagramme de 
-- [ ] Update the website
-- [ ] Contact the media
+- [x] Diagramme des Cas d'Utilisation
+- [x] Diagramme des Classes
+- [ ] Diagramme de Séquence
+    - [x] Use Case : Se connecter
 
