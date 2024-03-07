@@ -3,7 +3,7 @@ Ce repo est pour le rendu d'un projet de classe en Base de la Modélisation Obje
 
 ## Nom et Prénoms des Binomes
     - Binome 1 : AKA Jean Ruphin
-    - Binome 2 : SALAKO Augustin Yann
+    - Binome 2 : SALAKO Augustin Sèmèvo
 
 ## TO DO
 + [x] Diagramme de 
