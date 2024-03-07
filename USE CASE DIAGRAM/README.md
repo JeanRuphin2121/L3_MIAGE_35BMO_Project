@@ -1,5 +1,5 @@
 ## Description Textuelle du Diagramme des Cas d'Utilisation
-    Le diagramme des Cas d'Utilisation représente un système de gestion des paris en ligne avec les différents types d'utilisateurs que nous pourrions avoir.
+Le diagramme des Cas d'Utilisation représente un système de gestion des paris en ligne avec les différents types d'utilisateurs que nous pourrions avoir.
 
 #### Les Acteurs
     Pour ce système, nous avons recensés deux (02) types d'utilisateurs à savoir :
