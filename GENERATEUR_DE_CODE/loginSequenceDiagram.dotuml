@@ -3,17 +3,17 @@ SequenceDiagram [frame=true framecolor=steelblue label="Login Sequence Diagram"]
   lifeline "Web App" as web
   database bdd autoactivate
  
-  user --> web "login(string username, string password)"
+  user --> web "1: login(string username, string password)"
   activate web
-  web --> bdd "Requête SQL"
-  bdd --> bdd "Vérification()"
+  web --> bdd "2: Requête SQL"
+  bdd --> bdd "3: Vérification()"
   
   fragment alt "[Login Data is correct]" {
-  	web <-r- bdd "Confirmer()"
-  	user <-r- web "Utilisateur connecté (Access granted)"
+  	web <-r- bdd "4: Confirmer()"
+  	user <-r- web "5: Utilisateur connecté (Access granted)"
   case "[Login Data is incorrect]"
-    web <-r- bdd "Accès introuvable dans la bdd"
-    user <-r- web "Utilisateur non trouvé dans la bdd (Access denied)"
+    web <-r- bdd "6: Accès introuvable dans la bdd"
+    user <-r- web "7: Utilisateur non trouvé dans la bdd (Access denied)"
   }
   
 }
