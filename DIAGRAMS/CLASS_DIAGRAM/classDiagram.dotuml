@@ -50,12 +50,12 @@ ClassDiagram [frame=true framecolor=steelblue label="Class Diagram"] {
 }
  
   User "1" -- "0..*" Bet: "consulter pari";
-  Bet "0..*" -- "*" Sport: "";
-  Option "*" -- "*" Sport;
-  Option "*" -- "*" Bet;
-  SportEvent "1..*" -- "0..*" Bet;
+  Bet "0..*" -- "*" Sport: "être en lien";
+  Option "*" -- "*" Sport "possède";
+  Option "*" -- "*" Bet "possède";
+  SportEvent "1..*" -- "0..*" Bet "est en lien avec";
   Bookmaker "1" -- "*" SportEvent: "définir les évènements proposés";
-  RealTimeDataProvider "1" --  "0..*" SportEvent;
+  RealTimeDataProvider "1" --  "0..*" SportEvent "est en rapport avec";
  
   Bookmaker -g-> User
 }
