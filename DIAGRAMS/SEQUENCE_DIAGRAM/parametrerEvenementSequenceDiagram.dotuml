@@ -1,20 +1,23 @@
 SequenceDiagram [frame=true framecolor=steelblue label="Login Sequence Diagram"] {
   actor user
-  lifeline "Web App" as web
+  lifeline "Web App" as web autoactivate
   database bdd autoactivate
+  autonumber 1 1
 
-  user --> web "1: Demander l'ajout d'un évènement sportif"
-  user <-r- web "2: Afficher l'interface de paramétrage d'un évènement sportif"
-  user --> web "3: Saisir les informarions demandées par l'interface et envoyer"
-  web --> bdd "4: Envoyer informations"
-  bdd --> bdd "5: Exécuter une requête INSERT"
+  fragment ref "LoginSequenceDiagram" over user, bdd
+
+  user --> web "Demander l'ajout d'un évènement sportif"
+  user <-r- web "Afficher l'interface de paramétrage d'un évènement sportif"
+  user --> web "Saisir les informarions demandées par l'interface et envoyer"
+  web --> bdd "Envoyer informations"
+  bdd --> bdd "Exécuter une requête INSERT"
 
   fragment alt "[Informations are correct]" {
-    web <-r- bdd "6: Insertion effectuée avec succès"
-    user <-r- web "7: Rediriger vers l'accueil avec notifications de succès"
+    web <-r- bdd "Insertion effectuée avec succès"
+    user <-r- web "Rediriger vers l'accueil avec notifications de succès"
 
     case "[Informations aren't correct]" 
-    web <-r- bdd "8: Echec de l'insertion"
-    user <-r- web "9: Rediriger vers l'accueil avec une  notification d'échec"
+    web <-r- bdd "Echec de l'insertion"
+    user <-r- web "Rediriger vers l'accueil avec une  notification d'échec"
   }
 }

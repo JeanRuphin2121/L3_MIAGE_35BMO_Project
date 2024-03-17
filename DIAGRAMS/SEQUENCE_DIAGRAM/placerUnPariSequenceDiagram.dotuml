@@ -2,7 +2,10 @@ SequenceDiagram [frame=true framecolor=steelblue label="Placer un pari Sequence 
   actor user
   lifeline "Web App" as web autoactivate
   database bdd autoactivate
-  
+  autonumber 1 1
+
+  fragment ref "LoginSequenceDiagram" over user, bdd
+
   user --> web "1: Demander liste des évènements"
   web --> bdd "2: SELECT * FROM SportEvent"
   bdd --> bdd "3: Traitement de la requête"
