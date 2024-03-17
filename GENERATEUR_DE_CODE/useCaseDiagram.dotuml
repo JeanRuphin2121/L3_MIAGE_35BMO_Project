@@ -11,7 +11,7 @@ UseCaseDiagram [frame=true framecolor=steelblue label="Usecase Diagram"] {
     usecase s as "Limiter le montant maximal d'un pari"
     usecase t as "Paramétrer évènements"
     usecase w as "Créer un compte"
-    usecase u as "Se connecter à son compte"
+    usecase u as "Se connecter"
     usecase i as "Consulter les paris"
   }
  
@@ -22,7 +22,7 @@ UseCaseDiagram [frame=true framecolor=steelblue label="Usecase Diagram"] {
   a -- i
   y -e-> x
   z -e-> x
- 
+
   b -- t
   b -- r
   b -- s
