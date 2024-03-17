@@ -1,0 +1,26 @@
+SequenceDiagram [frame=true framecolor=steelblue label="Placer un pari Sequence Diagram"] {
+  actor user
+  lifeline "Web App" as web autoactivate
+  database bdd autoactivate
+  
+  user --> web "1: Demander liste des évènements"
+  web --> bdd "2: SELECT * FROM SportEvent"
+  bdd --> bdd "3: Traitement de la requête"
+  web <-r- bdd "4: Réponse de la requête"
+  user <-r- web "5: Afficher la liste des évènements sportifs par sport"
+  user --> web "6: Sélection du Sport et de l'évènement"
+  user <-r- web "7: Renvoi l'écran de paramétrage des paris"
+  user --> web "8: Sélectionner les paramètres et saisir le montant voulu pour le paris"
+  web --> web "9: Compare (Montant saisi, Montant disponible sur le compte du parieur)"
+  fragment alt "[Montant saisi <= Montant disponible sur le compte]" {
+
+    web --> bdd "10: Les informations du pari à savoir : côte, les équipes, Montant du pari"
+    bdd --> bdd "11: Insertion des infos dans la BDD"
+    web <-r- bdd "12: Ticket de Pari sauvegardé avec les informations reçues"
+    user <-r- web "13: Pari effectué avec succès"
+
+    case "[Montant saisi > Montant disponible sur le compte]"
+
+    user <-r- web "14: Solde insuffisant + Pari non effectué"
+  }
+}

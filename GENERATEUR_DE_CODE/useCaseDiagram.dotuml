@@ -1,0 +1,31 @@
+UseCaseDiagram [frame=true framecolor=steelblue label="Usecase Diagram"] {
+  actor a as "Utilisateur"
+  actor b as "Bookmaker"
+ 
+  system "Système de Gestion de paris en ligne" as sys {
+  usecase r as "Plafonner les gains"
+    usecase x as "Placer un pari"
+    usecase y as "Placer un pari Simple"
+    usecase z as "Placer un pari Avancé"
+    usecase v as "Consulter un évènement sportif"
+    usecase s as "Limiter le montant maximal d'un pari"
+    usecase t as "Paramétrer évènements"
+    usecase w as "Créer un compte"
+    usecase u as "Se connecter à son compte"
+    usecase i as "Consulter les paris"
+  }
+ 
+  a -- v
+  a -- x
+  a -- u
+  a -- w
+  a -- i
+  y -e-> x
+  z -e-> x
+ 
+  b -- t
+  b -- r
+  b -- s
+  //v --> u
+  //x --> u
+}
