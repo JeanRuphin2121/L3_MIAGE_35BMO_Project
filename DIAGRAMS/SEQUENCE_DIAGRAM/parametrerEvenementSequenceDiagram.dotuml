@@ -1,4 +1,4 @@
-SequenceDiagram [frame=true framecolor=steelblue label="Login Sequence Diagram"] {
+SequenceDiagram [frame=true framecolor=steelblue label="Parametrer Un Evenement Sequence Diagram"] {
   actor user
   lifeline "Web App" as web autoactivate
   database bdd autoactivate
