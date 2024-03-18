@@ -1,6 +1,0 @@
-StateDiagram [frame=true framecolor=steelblue label="State Diagram"] {
-    state 1
-
-    initialState -> 1
-    1 -> finalState
-}
