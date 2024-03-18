@@ -1,10 +1,8 @@
-SequenceDiagram [frame=true framecolor=steelblue label="Login Sequence Diagram"] {
+SequenceDiagram [frame=true framecolor=steelblue label="Créer un compte Sequence Diagram"] {
   actor user
   lifeline "Web App" as web autoactivate
   database bdd autoactivate
   autonumber 1 1
-
-  fragment ref "LoginSequenceDiagram" over user, bdd
 
   user --> web "Demander interface de ceéation de compte"
   user <-r- web "Afficher interface de création de compte"

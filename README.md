@@ -8,7 +8,7 @@ Ce repo est pour le rendu d'un projet de classe en Base de la Modélisation Obje
 ## TO DO / DONE
 - [x] Diagramme des Cas d'Utilisation
 - [x] Diagramme des Classes
-- [ ] Diagramme de Séquence
+- [x] Diagramme de Séquence
     - [x] Use Case : Se connecter
     - [x] Use Case : Créer un compte
     - [x] Use Case : Placer un Pari
@@ -20,4 +20,6 @@ Ce repo est pour le rendu d'un projet de classe en Base de la Modélisation Obje
     - [x] Classe : User
     - [x] Classe : SportEvent
     - [x] Classe : Bet
+- [x] Générateur de code
+- [x] Projet OpenXava
 
