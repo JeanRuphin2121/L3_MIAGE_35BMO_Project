@@ -1,0 +1,27 @@
+StateDiagram [frame=true framecolor=steelblue label="SportEvent State Diagram"] {
+    state Upcoming
+    state Live
+    state Cancelled
+    state Completed
+    fork f1
+    fork f2
+    fork f3
+
+    initialState -> Upcoming
+    Upcoming -> f1
+    f1 -> Live "La date et l'heure de l'évènement correspondent au moment présent"
+    f1 -> Cancelled "L'organisateur annule l'évènement avant son début"
+  
+  // Transition de l'état Completed vers les autres états
+    Completed -> f2
+    f2 -> finalState
+    f2 -> Cancelled "L'organisateur annule l'évènement après sa fin (Résultats annulés,...)"
+  
+  // Transition de l'état Cancelled vers l'état final
+    Cancelled -> finalState
+  
+  // Transition de l'état Live vers les autres états
+     Live -> f3
+     f3 -> Completed "L'évènement se termine (Fin du match, ...)"
+  	 f3 -> Cancelled "L'évènement a étét suspendu alors qu'elle état en cours"
+}
