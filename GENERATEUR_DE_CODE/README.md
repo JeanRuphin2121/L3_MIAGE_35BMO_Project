@@ -1,6 +1,6 @@
 # Générateur de code OpenXava à partir de fichiers .dotuml
 
-Dans ce dossier nous avons coder un générateur de code OpenXava qui convertit les fichiers .dotuml en code Java correspondant pour chaque classe du diagramme de classe. le fichier du script est "scriptpy"
+Dans ce dossier nous avons coder un générateur de code OpenXava qui convertit les fichiers .dotuml en code Java correspondant pour chaque classe du diagramme de classe. le fichier du script est "script.py"
 
 ## Fonctionnalités
 
