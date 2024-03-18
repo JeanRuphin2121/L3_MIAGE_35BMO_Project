@@ -9,8 +9,6 @@ ClassDiagram [frame=true framecolor=steelblue label="Class Diagram"] {
   public consulterEvent()
   public placerPari()
   public rechargerJetons()
-  //private loginStatus : Status
-  //private role : String
  }
  
   class Bookmaker {
@@ -24,15 +22,13 @@ ClassDiagram [frame=true framecolor=steelblue label="Class Diagram"] {
   }
  
   class Bet {
-    public betType : String
+    public betType : BetType
     public betOdd : decimal
-    //public event : SportEvent
-    //public betOption : Option
     public amount : float
   }
  
   class Option {
-    private optionName : String
+  private optionName : String
     public BetType : Bet
   }
  
