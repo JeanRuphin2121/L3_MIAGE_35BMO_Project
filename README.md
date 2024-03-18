@@ -5,11 +5,19 @@ Ce repo est pour le rendu d'un projet de classe en Base de la Modélisation Obje
 - Binome 1 : AKA Jean Ruphin
 - Binome 2 : SALAKO Augustin Sèmèvo
 
-## TO DO
+## TO DO / DONE
 - [x] Diagramme des Cas d'Utilisation
 - [x] Diagramme des Classes
 - [ ] Diagramme de Séquence
     - [x] Use Case : Se connecter
-    - [x] Use Case : Placer un pari
-- [ ] Diagramme d'états-transitions
+    - [x] Use Case : Créer un compte
+    - [x] Use Case : Placer un Pari
+    - [x] Use Case : Paramétrer les évènements
+    - [x] Use Case : Consulter un évènement
+    - [ ] Use Case : Limiter le montant maximal d'un pari
+    - [ ] Use Case : Plafonner les gains
+- [x] Diagramme d'états-transitions
+    - [x] Classe : User
+    - [x] Classe : SportEvent
+    - [x] Classe : Bet
 
