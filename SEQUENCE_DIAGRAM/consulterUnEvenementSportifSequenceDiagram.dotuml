@@ -1,0 +1,23 @@
+SequenceDiagram [frame=true framecolor=steelblue label="Login Sequence Diagram"] {
+  actor user
+  lifeline "Web App" as web autoactivate
+  database bdd autoactivate
+  autonumber 1 1
+
+  fragment ref "LoginSequenceDiagram" over user, bdd
+ 
+  user --> web "Demander les évènements"
+  web --> bdd "Envoyer une requete select *"
+  bdd --> bdd "Vérification()"
+  web <-r- bdd "Réponse de la requête"
+  
+  fragment alt "[Events are available]" {
+  	user <-r- web "Lister tous les évènements à veniir ou en cours"
+    user --> web "Choisir un évènement"
+    user <-r- web "7Afficher toutes les informations relatives à l'évènements choisi"
+  case "[Event aren't available]"
+    user <-r- web "Renvoyer une liste vide"
+    user --> web "Retour à l'écran d'acceuil"
+  }
+  
+}
